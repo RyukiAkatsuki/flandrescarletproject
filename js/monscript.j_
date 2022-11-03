@@ -1,0 +1,85 @@
+
+
+$('.formulaire .sub').click(function(){
+  alert('Your information has been send to Yukari Yakumo');
+});
+
+  /* $('.burgerMenu').click(function(){
+    $('.burgerMenu').css('transition-delay', '0s');
+      // se cache lui meme avec un delay d'annimation 
+      $('.burgerMenu').css('opacity', '0');
+      $('nav').css('opacity', '1');
+      $('nav').css('visibility', 'visible');
+  }); */
+  /* ferme le menu burger et affiche l'icone d'ouverture 
+  $('.closeMenu').click(function() {
+      $('.burgerMenu').css('transition-delay', '0.5s');
+      $('.burgerMenu').css('opacity', '1');
+      $('nav').css('opacity', '0');
+      $('nav').css('visibility', 'hidden');
+  }); */
+
+  function showMenu(){
+    console.log("Gimme Oui")
+    /* var menu = document.getElementsByClassName("burgerMenu")[0];
+    menu.style.transitionDelay = "0s";
+    menu.style.visibility = "hidden"; */
+    var nav = document.getElementById("menu");
+    nav.style.visibility = "visible";
+    console.log(menu)
+  }
+  
+  function hideMenu(){
+   /* var menu = document.getElementsByClassName("burgerMenu")[0];
+    menu.style.transitionDelay = "0.5s";
+    menu.style.visibility = "visible"; */
+    var nav = document.getElementById("menu");
+    nav.style.visibility = "hidden";
+  }
+
+ function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+ function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (slides.length > 0){
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      console.log(slides, slideIndex, slides[slideIndex-1])
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  }

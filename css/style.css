@@ -1,0 +1,503 @@
+/* Le corps avec une police d'écriture + une fond de couleur*/
+body
+{
+    font-family: 'Crimson Text', serif;
+    background-color: #6d0505;
+}
+/* Couleur sur certains titres et paragraphes */
+h2, p
+{
+    color: #ff9900;
+}
+
+/* Nintendo Switch */
+.dark-mode {
+    background-color: white;
+    color: black;
+  }
+/* Lightbox */
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* Le Menu Burger - Miam */
+#menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #850505;
+}
+#closeMenu{
+    color: #000000;
+    font-size: 48px;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+.burgerMenu {
+    position: absolute;
+    top: 30px;
+    right: 36px;
+    cursor: pointer;
+    z-index: 20;
+}
+.burgerLigne {
+    width: 90px;
+    height: 5px;
+    background-color: #f19307;
+    margin-bottom: 10px;
+}
+.navMenu {
+    flex-flow: column wrap;
+}
+.navMenu li{
+    list-style: none;
+}
+.navMenu li a {
+    color: #f15900;
+    text-decoration: none;
+    font-size: 55px;
+    display: inline-block;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #0151f3;
+    transition: 0.2s ease all;
+}
+.navMenu li:last-child a{
+    border-bottom: none;
+}
+.navMenu li:hover a {
+    background-color: #6903dd;
+}
+/* L'entête */
+header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Flandre.Scarlet.full.671292.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+/* couleur des titres et quelques paragraphe pour l'entête */
+h2.perso
+{
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+p.mini
+{
+    color: #8ddef7;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h2.hist
+{
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+p.enf
+{
+    color: #8ddef7;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}
+h2.cont
+{
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}
+p.ph
+{
+    color: #8ddef7;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
+/* Sign Up - Login */
+.login{
+    color: orange;
+}
+/* La première section avec texte à gauche et images à droite */
+section.premier
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+article.gau
+{
+    width: 50vw;
+    height: 30vh;
+    padding: 40px;
+    box-sizing: border-box;
+}
+article.dro
+{
+    width: 50%;
+    height: 80vh;
+    background-image: url(../images/30784399_p0.jpg);
+    background-size: cover;
+}
+article.met
+{
+    width: 50%;
+    height: 80vh;
+    background-image: url(../images/052BAiJRFlandre.jpg);
+    background-size: cover;
+}
+article.yu
+{
+    width: 50%;
+    height: 80vh;
+    background-image: url(../images/d425m42-daa7ac8d-f4a6-4774-b871-fa87b6b374e7.png);
+    background-size: cover; 
+}
+/* Second section qui est l'inverse du premier, à gauche l'image et à droite le texte */
+section.seconde
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+article.gau2
+{
+    width: 51%;
+    height: 70vh;
+    background-image: url(../images/Zun-ds1-1340x1340.jpg);
+    background-size: cover;
+}
+article.dro2
+{
+    width: 50vw;
+    height: 30vh;
+    padding: 40px;
+    box-sizing: border-box;
+}
+article.wings
+{
+    width: 51%;
+    height: 70vh;
+    background-image: 
+    url(../images/s_-_2218233_-_1girl_blonde_hair_blue_flower_bow_bowtie_crystal_fang_flandre_scarlet_flower_fri.png);
+    background-size: cover;
+}
+article.flandre
+{
+    width: 51%;
+    height: 70vh;
+    background-image: url(../images/Flandre.Scarlet.full.1296269.jpg);
+    background-size: cover;
+}
+/* La liste de chaque couleur pour les ailes */
+li.lb
+{
+    list-style-type: none;
+    color: lightblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li.b
+{
+    list-style-type: none;
+    color: blue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li.p
+{
+    list-style-type: none;
+    color: #b109f3;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li.pi
+{
+    list-style-type: none;
+    color: pink;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li.or
+{
+    list-style-type: none;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li.ye
+{
+    list-style-type: none;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+li.lg
+{
+    list-style-type: none;
+    color: lightgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.formulaire {
+    color: orange;
+}
+.fname{
+    background-color:#2e0014;
+    color: orange;
+}
+.lname{
+    background-color:  #2e0014;
+    color: orange;
+}
+.mail{
+    background-color:  #2e0014;
+    color: orange;
+}
+.btn-new{
+    color: orange;
+    text-decoration: none;
+    align-items: center;
+}
+/* Responsive */
+@media screen and (max-width:640px)
+{
+    nav{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: 200;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #850505;
+    }
+    #closeMenu{
+        color: black;
+        font-size: 30px;
+        position: fixed;
+    }
+    .burgerMenu {
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 20;
+    }
+    .burgerLigne {
+        width: 40px;
+        height: 5px;
+        background-color: #f19307;
+        margin-bottom: 5px;
+    }
+    .navMenu {
+        flex-flow: column wrap;
+    }
+    .navMenu li{
+        list-style: none;
+    }
+
+    header
+    {
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/Flandre.Scarlet.full.671292.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    section.premier
+    {
+        flex-direction: column;
+    }
+    article.gau
+    {
+        width: 100vw;
+        height: 30vh;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    article.dro
+    {
+        width: 86%;
+        height: 70vh;
+    
+        padding: 40px;
+        background-image: url(../images/30784399_p0.jpg);
+        background-size: cover;
+    }
+    article.met
+    {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/052BAiJRFlandre.jpg);
+        background-size: cover;
+    }
+    article.yu
+    {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/d425m42-daa7ac8d-f4a6-4774-b871-fa87b6b374e7.png);
+        background-size: cover; 
+    }
+    section.seconde
+    {
+        flex-direction: column;
+    }
+    article.gau2
+    {
+        width: 100%;
+        height: 80vh;
+        background-image: url(../images/Zun-ds1-1340x1340.jpg);
+        background-size: cover;
+    }
+    article.dro2
+    {
+        width: 100%;
+        height: 70vh;
+    
+        padding: 40px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    article.wings
+    {  
+        width: 100%;
+        height: 100vh;
+        background-image: 
+        url(../images/s_-_2218233_-_1girl_blonde_hair_blue_flower_bow_bowtie_crystal_fang_flandre_scarlet_flower_fri.png);
+        background-size: cover;
+    }
+    article.flandre
+    {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/Flandre.Scarlet.full.1296269.jpg);
+        background-size: cover;
+    }
+}
